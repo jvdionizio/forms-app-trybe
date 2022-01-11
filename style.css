@@ -6,11 +6,23 @@
 
 body{
   width: 100%;
+  background: rgba(0, 0, 0, 0.118);
+}
+
+input{
+  border: none;
+  margin: 5px;
+  flex-basis: 45%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+select{
+  border: none;
 }
 
 .header {
   background-color: rgb(50, 167, 145);
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -21,6 +33,47 @@ body{
   z-index: 1;
 }
 
+.trybewarts-header-logo{
+  width: 5%;
+}
+
 .trybewarts-login{
   display: flex;
+}
+
+.main-content{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#evaluation-form{
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo{
+  height: 500px;
+}
+
+.user-info{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-info label{
+  flex-basis: 45%;
+  padding: 10px
+}
+
+.user-info label select{
+  width: 79%;
+  border: none;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: #FFF
 }
