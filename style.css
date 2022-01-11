@@ -77,3 +77,23 @@ select{
   border-radius: 10px;
   background-color: #FFF
 }
+
+.user-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-family input {
+  flex-basis: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radio-container {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin-top: 10px;
+}
+
