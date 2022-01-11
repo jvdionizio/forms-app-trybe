@@ -14,4 +14,28 @@ window.onload = function pgCarregada() {
   }
 
   btnLogin.addEventListener('click', login);
+
+  function btnSubmit () {
+    const btnSubmit = document.getElementById('submit-btn')
+    const agreement = document.getElementById('agreement')
+
+    if (agreement.checked == false) {
+      btnSubmit.disabled = true;
+    } 
+    
+    agreement.addEventListener('click', acceptAgreement)
+
+    function acceptAgreement() {
+      if(agreement.checked == true){
+        btnSubmit.disabled = false;
+      } else {
+        btnSubmit.disabled = true;
+      }
+    }
+
+  }
+
+  
+  btnSubmit()
+
 };
