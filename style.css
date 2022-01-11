@@ -106,3 +106,7 @@ select{
 .skill-container label {
   margin-top: 10px;
 }
+
+#avalieTrybe label{
+  margin-left: 5px;
+}
