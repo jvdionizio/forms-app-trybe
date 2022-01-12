@@ -16,11 +16,21 @@ input{
   margin: 5px;
   flex-basis: 45%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 select{
   border: none;
+}
+
+button{
+  width: 100%;
+  padding:10px;
+  height: 35px;
+  border:none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: purple
 }
 
 .header {
@@ -35,12 +45,17 @@ select{
   z-index: 1;
 }
 
+header h1{
+  color: #fff;
+}
+
 .trybewarts-header-logo{
   width: 5%;
 }
 
 .trybewarts-login{
   display: flex;
+  align-items:center;
 }
 
 .main-content{
@@ -49,7 +64,7 @@ select{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 95%;
 }
 
 #evaluation-form{
@@ -86,11 +101,16 @@ select{
   flex-direction: column;
 }
 
-.user-family input {
-  flex-basis: 0;
-  border: none;
-  padding: 0;
-  margin: 0;
+
+.user-family label{
+  margin: 10px;
+}
+
+.familia-conteudos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .radio-container {
@@ -100,27 +120,64 @@ select{
  margin-top: 10px;
 }
 
-.skill-container {
+.avaliation{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+#avalieTrybe{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:8px;
+}
+
+#label-rate{
+  margin: 0;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 45%;
+  flex-wrap: wrap;
 }
 
 .skill-container label {
-  margin-top: 10px;
+  margin: 10px;
 }
 
-#avalieTrybe label{
-  margin-left: 5px;
+#submit-btn{
+  margin-top: 8px;
 }
+
+#counter-textarea{
+  display: flex;
+  justify-content: flex-end;
+  color:rgba(0, 0, 0, 0.522)
+}
+
+#text{
+  margin-left: 4px;
+}
+
+textarea {
+  border:purple 1px solid;
+  border-radius: 5px;
+  width: 100%;
+}
+
 
 footer {
+  position: absolute;
   display: flex;
   text-align: center;
   justify-content: center;
   height: 50px;
   bottom: 0;
   background-color: rgba(148, 148, 148, 0.966);
+  width: 100%;
 }
 
 footer h4 {

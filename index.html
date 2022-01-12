@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -27,37 +27,34 @@
                 <input type="text" id="input-name" placeholder="Nome">
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
                 <input type="email" id="input-email" placeholder="Email">
-                <label for="house">Casa:<label>
-                        <select id="house">
-                            <option id="gitnoria-house" value="Gitnória" selected>Gitnória</option>
-                            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                            <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                        </select>
+                <label for="house">Casa:
+                    <select id="house">
+                        <option id="gitnoria-house" value="Gitnória" selected>Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </label>
             </div>
             <hr>
 
-            <div class="user-family">
-                <label for="" id='label-family'>Qual sua família?</label>
+            <div class="familia-conteudos">
+                <div class="user-family">
+                    <label for="" id='label-family'>Qual sua família?</label>
+                    <label for="family1">
+                        <input id="family1" type="radio" name='family' value='Frontend'> Família Frontend
+                    </label>
 
-                <div>
-                    <div class="radio-container">
-                        <input type="radio" name='family' value='Frontend'> Família Frontend
-                    </div>
+                    <label for="family2">
+                        <input id="family2" type="radio" name='family' value='Backend'> Família Backend
+                    </label>
 
-                    <div class="radio-container">
-                        <input type="radio" name='family' value='Backend'> Família Backend
-                    </div>
-
-                    <div class="radio-container">
-                        <input type="radio" name='family' value='FullStack'> Família FullStack
-
-                    </div>
+                    <label for="family3">
+                        <input id="family3"type="radio" name='family' value='FullStack'> Família FullStack
+                    </label>
                 </div>
-
                 <div class="skill-container">
                     <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?"</label>
-
                     <label for="skill1"><input type="checkbox" name="" id="skill1" value="HoFs"> HoFs</label>
                     <label for="skill2"><input type="checkbox" name="" id="skill2" value="Jest"> Jest</label>
                     <label for="skill3"><input type="checkbox" name="" id="skill3" value="Promises"> Promises</label>
@@ -65,37 +62,39 @@
                     <label for="skill5"><input type="checkbox" name="" id="skill5" value="SQL"> SQL</label>
                     <label for="skill6"><input type="checkbox" name="" id="skill6" value="Python"> Python</label>
                 </div>
-                <hr>
+            </div>
+            <hr>
 
-                <div class="avaliation">
+            <div class="avaliation">
 
-                    <div id="avalieTrybe">
-                        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+                <div id="avalieTrybe">
+                    <label for="" id="label-rate">Como você avalia a Trybewarts?
+                    </label>
+                    <label for="nota1"><input type="radio" value="1" name="rate" id="nota1">1</label>
+                    <label for="nota2"><input type="radio" value="2" name="rate" id="nota2">2</label>
+                    <label for="nota3"><input type="radio" value="3" name="rate" id="nota3">3</label>
+                    <label for="nota4"><input type="radio" value="4" name="rate" id="nota4">4</label>
+                    <label for="nota5"><input type="radio" value="5" name="rate" id="nota5">5</label>
+                    <label for="nota6"><input type="radio" value="6" name="rate" id="nota6">6</label>
+                    <label for="nota7"><input type="radio" value="7" name="rate" id="nota7">7</label>
+                    <label for="nota8"><input type="radio" value="8" name="rate" id="nota8">8</label>
+                    <label for="nota9"><input type="radio" value="9" name="rate" id="nota9">9</label>
+                    <label for="nota10"><input type="radio" value="10" name="rate" id="nota10">10</label>
+                </div>
 
-                        <label for="nota1"><input type="radio" value="1" name="rate" id="nota1">1</label>
-                        <label for="nota2"><input type="radio" value="2" name="rate" id="nota2">2</label>
-                        <label for="nota3"><input type="radio" value="3" name="rate" id="nota3">3</label>
-                        <label for="nota4"><input type="radio" value="4" name="rate" id="nota4">4</label>
-                        <label for="nota5"><input type="radio" value="5" name="rate" id="nota5">5</label>
-                        <label for="nota6"><input type="radio" value="6" name="rate" id="nota6">6</label>
-                        <label for="nota7"><input type="radio" value="7" name="rate" id="nota7">7</label>
-                        <label for="nota8"><input type="radio" value="8" name="rate" id="nota8">8</label>
-                        <label for="nota9"><input type="radio" value="9" name="rate" id="nota9">9</label>
-                        <label for="nota10"><input type="radio" value="10" name="rate" id="nota10">10</label>
+
+                <div>
+                    <label for="" class="textarea">Deixe seu comentário:</label>
+
+                    <br>
+
+                    <textarea name="" id="textarea" cols="60" rows="10" maxlength="500"></textarea>
+                    <div id="counter-textarea">
+                        <div id="counter">500</div><div id="text" >caracteres restantes.</div>
                     </div>
 
-
-                    <div>
-                        <label for="" class="textarea">Deixe seu comentário:</label>
-
-                        <br>
-
-                        <textarea name="" id="textarea" cols="60" rows="10" maxlength="500"></textarea>
-                        <br>
-
-                        <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-                        <input type="checkbox" name="" id="agreement">
-                    </div>
+                    <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+                    <input type="checkbox" name="" id="agreement">
                 </div>
             </div>
 

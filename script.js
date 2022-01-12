@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 window.onload = function pgCarregada() {
   const btnLogin = document.querySelector('#btn-login');
 
@@ -15,27 +16,34 @@ window.onload = function pgCarregada() {
 
   btnLogin.addEventListener('click', login);
 
-  function btnSubmit () {
-    const btnSubmit = document.getElementById('submit-btn')
-    const agreement = document.getElementById('agreement')
+  function Submit() {
+    const btnSubmit = document.getElementById('submit-btn');
+    const agreement = document.getElementById('agreement');
 
-    if (agreement.checked == false) {
+    if (agreement.checked === false) {
       btnSubmit.disabled = true;
-    } 
-    
-    agreement.addEventListener('click', acceptAgreement)
-
+    }
     function acceptAgreement() {
-      if(agreement.checked == true){
+      if (agreement.checked === true) {
         btnSubmit.disabled = false;
       } else {
         btnSubmit.disabled = true;
       }
     }
-
+    agreement.addEventListener('click', acceptAgreement);
   }
 
-  
-  btnSubmit()
+  Submit();
 
+  const textArea = document.querySelector('#textarea');
+
+  function contar() {
+    const contador = document.getElementById('counter');
+    const tamanho = document.querySelector('#textarea').value.length;
+    const counterValue = 500 - tamanho;
+
+    contador.innerText = counterValue;
+  }
+
+  textArea.addEventListener('keyup', contar);
 };
