@@ -1,17 +1,17 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background: rgba(0, 0, 0, 0.118);
   display: flex;
   flex-direction: column;
   width: 100vw;
 }
 
-input{
+input {
   border: none;
   margin: 5px;
   flex-basis: 45%;
@@ -19,18 +19,18 @@ input{
   border-radius: 5px;
 }
 
-select{
+select {
   border: none;
 }
 
-button{
+button {
   width: 100%;
-  padding:10px;
+  padding: 10px;
   height: 35px;
-  border:none;
+  border: none;
   border-radius: 5px;
-  color: #fff;
-  background-color: purple
+  color: white;
+  background-color: purple;
 }
 
 .header {
@@ -45,20 +45,20 @@ button{
   z-index: 1;
 }
 
-header h1{
-  color: #fff;
+header h1 {
+  color: white;
 }
 
-.trybewarts-header-logo{
+.trybewarts-header-logo {
   width: 5%;
 }
 
-.trybewarts-login{
+.trybewarts-login {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
-.main-content{
+.main-content {
   margin: 50px;
   display: flex;
   flex-direction: row;
@@ -67,33 +67,33 @@ header h1{
   width: 95%;
 }
 
-#evaluation-form{
+#evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
 }
 
-.user-info{
+.user-info {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.user-info label{
+.user-info label {
   flex-basis: 45%;
-  padding: 10px
+  padding: 10px;
 }
 
-.user-info label select{
+.user-info label select {
   width: 79%;
   border: none;
   padding: 4px;
   border-radius: 10px;
-  background-color: #FFF
+  background-color: white;
 }
 
 .user-family {
@@ -102,11 +102,11 @@ header h1{
 }
 
 
-.user-family label{
+.user-family label {
   margin: 10px;
 }
 
-.familia-conteudos{
+.familia-conteudos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -114,56 +114,52 @@ header h1{
 }
 
 .radio-container {
-  display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- margin-top: 10px;
+  margin-top: 10px;
 }
 
-.avaliation{
+.avaliation {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 8px;
 }
 
-#avalieTrybe{
+#avalieTrybe {
   display: flex;
   justify-content: space-between;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 
-#label-rate{
+#label-rate {
   margin: 0;
 }
 
 .skill-container {
   display: flex;
-  flex-direction: row;
   flex-basis: 45%;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .skill-container label {
   margin: 10px;
 }
 
-#submit-btn{
+#submit-btn {
   margin-top: 8px;
 }
 
-#counter-textarea{
+#counter-textarea {
   display: flex;
   justify-content: flex-end;
-  color:rgba(0, 0, 0, 0.522)
+  color: rgba(0, 0, 0, 0.522);
 }
 
-#text{
+#text {
   margin-left: 4px;
 }
 
 textarea {
-  border:purple 1px solid;
+  border: purple 1px solid;
   border-radius: 5px;
   width: 100%;
 }
