@@ -48,8 +48,9 @@ function obterDados() {
   let inputEmail = document.querySelector('#input-email').value
   let inputHouse = document.querySelector('#house').value
   let inputFamily = ''
-
   let inputSkill = document.getElementsByClassName('subject')
+  let inputAvaliation = ''
+  let observation = document.querySelector('#textarea').value
 
   let inputFamily1 = document.querySelector('#family1')
   let inputFamily2 = document.querySelector('#family2')
@@ -65,22 +66,33 @@ function obterDados() {
     inputFamily = inputFamily3.value
   }
 
-  let valores = []
+  let materias = []
   
-  for(let index = 0; index < inputSkill.length; index++){
-    if(index.checked){
-      console.log(index.value)
+  for(let skill of inputSkill){
+    if(skill.checked){
+      materias.push(skill.value)
     }
   }
 
+  materias.join(',')
 
+
+  let notas = document.getElementsByClassName('nota')
+
+  for(let nota of notas){
+    if(nota.checked){
+      inputAvaliation = nota.value
+    }
+  }
 
   
   dados.Nome = `${inputName}` + ' ' + `${inputLastName}`
-  dados.Email = `${inputEmail}`
-  dados.House = `${inputHouse}`
+  dados.Email = inputEmail
+  dados.Casa = inputHouse
   dados.Família = inputFamily
-  dados.Matérias = ''
+  dados.Matérias = materias
+  dados.Avaliação = inputAvaliation
+  dados.Observações = observation
   
-  return valores
+  return dados
 }
